@@ -28,10 +28,10 @@
         scanf(" %[^\n]s", &titulo[i]);
 
         printf("CUAL ES SU AUTOR:  ");
-        scanf("%s", &autor[i]);
+        scanf(" %[^\n]s", &autor[i]);
 
         printf("DE QUE GENERO ES EL LIBRO:  ");
-        scanf("%s", &genero[i]);
+        scanf(" %[^\n]s", &genero[i]);
 
         printf("INGRESE EL CODIGO DEL LIBRO:  ");
         scanf("%10s", codigo[i]);
