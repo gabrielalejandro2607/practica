@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoFútbol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <header>
+    <h1>TecnoFútbol</h1>
+    <nav>
+      <ul>
+        <li><a href="#productos" class="btn">Productos</a></li>
+        <li><a href="#planes" class="btn">Planes de Entrenamiento</a></li>
+        <li><a href="#atencion" class="btn">Atención al Cliente</a></li>
+        <li><a href="#contacto" class="btn">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="carrito" class="carrito">
+  <h3> Carrito</h3>
+  <ul id="lista-carrito"></ul>
+</div>
+
+  <!-- Sección de productos -->
+  <section id="productos">
+    <div class="tituloProductos">
+      <h2>Nuestros Productos</h2>
+      <p>Herramientas para ayudar al atleta a llegar mejor a la competencia y mejorar su rendimiento y nivel.</p>
+    </div>
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="images/smartwatch.jpg" alt="Smartwatch">
+      <h3>Smartwatch</h3>
+      <p>Relojes inteligentes para llevar tus medidas del progreso.</p>
+      <button onclick="toggleGaleriaGlobal(this, 'galeria-smartwatch')" class="btn">Ver más</button>
+    </div>
+
+    <div id="galeria-smartwatch" class="galeria-global" style="display: none;">
+        <h3>Modelos disponible</h3>
+        <div class="galeria-horizontal">
+            <div class="item-galeria">
+                <img src="images/applewatch10.jpg" alt="applewatch10">
+                <p><strong>Apple watch 10</strong><br>Diseño comodo, Larga duracion, resistente al agua y polvo</p>
+                <button class="btn" onclick="añadirAlCarrito('Apple watch 10')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+                <img src="images/galaxy7samsung.jpg" alt="Samsung 7">
+                <p><strong>Samsung Galaxy 7</strong><br>Diseño sencillo, duracion de 7 a 9 horas, resitente al agua</p>
+                <button class="btn" onclick="añadirAlCarrito('Samsung Galaxy 7 Smartwatch')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+                <img src="images/xiaomi.jpg" alt="Xiamoi">
+                <p><strong>Xiamoi smartwatch</strong><br>Diseño compacto, duracion de 12 a 15 horas,resistente al polvo y agua</p>
+                <button class="btn" onclick="añadirAlCarrito('Smartwatch Xiamoi')">Añadir carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/colmi.jpg" alt="smartwatch">
+              <p><strong>Smartwatch Colmi</strong><br>Diseño atractivo y moderno, con larga duracion de bateri</p>
+              <button class="btn" onclick="añadirAlCarrito('Smartwatch Colmi')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/smartwatchgo.jpg" alt="Smartwatch Go3">
+              <p><strong>Smartwatch Go 3</strong><br>Diseño elegante para cualquier ocasion, resistente al agua y polvo</p>
+              <button class="btn" onclick="añadirAlCarrito('Smartwatch GO 3')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/audifonos.jpg" alt="Smartwatch con audifonos">
+              <p><strong>Smartwatchs con audifonos bluetooth</strong><br>Diseño comodo, con audifonos bluetooth para una mejor experiencia</p>
+              <button class="btn" onclick="añadirAlCarrito('Smartwatch con Audifonos')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="images/pistomas.jpg" alt="Pistolas de Masajes">
+      <h3>Herramientas de recuperación</h3>
+      <p>Herramientas útiles para aliviar dolores, relajarse y mejorar recuperación.</p>
+      <button onclick="toggleGaleriaGlobal(this, 'galeria-pist')" class="btn">Ver más</button>
+    </div>
+    <div id="galeria-pist" class="galeria-global" style="display: none;">
+        <h3>Modelos disponibles</h3>
+        <div class="galeria-horizontal">
+            <div class="item-galeria">
+            <img src="images/modelo2.jpg" alt="Modelo2">
+            <p><strong>Modelo 2</strong><br>Pistola de masajes de velocidad baja</p>
+            <button class="btn" onclick="añadirAlCarrito('Pistola de Masaje 1')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+            <img src="images/modelo3.jpg" alt="Modelo 3">
+            <p><strong>Modelo 3</strong><br>Pistola de masajes con varias velocidades, larga duracion y diseño compacto</p>
+            <button class="btn" onclick="añadirAlCarrito('Pistola de Masaje 2')">Añadir carrito</button>
+             </div>
+             <div class="item-galeria">
+              <img src="images/jilitec.jpg" alt="Botas de recuperación">
+              <p><strong>Jilitec</strong><br>Botas para la recuperación mas rapida y optima de los atletas, ademas de mejorar la circulacion sanguinea.</p>
+              <button class="btn" onclick="añadirAlCarrito('Jilitec')">Añadir al carrito</button>
+             </div>
+             <div class="item-galeria">
+              <img src="images/normatec.jpg" alt="Halland">
+              <p><strong>Normatec Lower Legs</strong><br>Un dispositivo que es totalmente portátil y capaz de dar masajes de aire dinámico, 
+                con 7 niveles de intensida</p>
+              <button class="btn" onclick="añadirAlCarrito('Normatec Lower Legs')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/masajeador.jpg" alt="MiniMasajeador">
+              <p><strong>MiniMasajeador</strong><br>Masajeador para cuello, espaldas u hombros recargable</p>
+              <button class="btn" onclick="añadirAlCarrito('Mini Masajeador')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/ondas.lpg.jpg" alt="Pistolas de ondas">
+              <p><strong>Equipos de ondas de choque</strong><br>Equipo de fisioterapia para ayudar al jugador despues de alguna lesion
+              </p>
+                <button class="btn" onclick="añadirAlCarrito('Pistola de Onda de Choque')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="images/lamejorfoto.jpg" alt="Camisetas">
+      <h3>Camisetas de futbol</h3>
+      <p>Camisetas de todos los equipos con o sin dorsal.</p>
+      <button onclick="toggleGaleriaGlobal(this, 'galeria-Camiseta')" class="btn">Ver más</button>
+    </div>
+
+    <div id="galeria-Camiseta" class="galeria-global" style="display: none;">
+        <h3>Modelos disponibles</h3>
+        <div class="galeria-horizontal">
+            <div class="item-galeria">
+                <img src="images/varca.jpg" alt="Barcelona">
+                <p><strong>Camiseta Barcelona 2025/26</strong><br></p>
+                <button class="btn" onclick="añadirAlCarrito('Camiseta Barcelona 2025/26')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/barca.jpg" alt="Camisa visitante">
+              <p><strong>Camiseta barcelona visitante 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Barcelona visitante')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/mrd.jpg" alt="mrd">
+              <p><strong>Camiseta Real Madrid 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Real Madrid')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/mrd2.jpg" alt="mrd2">
+              <p><strong>Camiseta Real Madrid visitante 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Real Madrid visitante')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/liv.jpg" alt="Liverpool">
+              <p><strong>Camisetas Liverpool 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Liverpool')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/livvisita.jpg" alt="Liverpool visitante">
+              <p><strong>Camiseta Liverpool visitante 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Liverpool visitante')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/bayer.png" alt="Bayer Munchen">
+              <p><strong>Bayern Munchen Camiseta 2025/26</strong><br></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta Bayern 2025/26')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/psg.jpg" alt="PSG">
+              <p><strong>Camiseta PSG 2025/26</strong></p>
+              <button class="btn" onclick="añadirAlCarrito('Camiseta PSG')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="images/chipsbotas.jpg" alt="PlayMaker kit">
+      <h3>PlayMaker kit</h3>
+      <p>Chips para tus zapatos que ayudan a medir tus estadísticas.</p>
+      <button onclick="toggleGaleriaGlobal(this, 'galeria-playmaker')" class="btn">Ver más</button>
+    </div>
+
+    <div id="galeria-playmaker" class="galeria-global" style="display: none;">
+        <h3>Modelos disponibles</h3>
+        <div class="galeria-horizontal">
+            <div class="item-galeria">
+                <img src="images/playmaker.jpg" alt="PlayMaker">
+                <p><strong>PlayMaker kit</strong><br>Rastreador de actividad para ver si el atleta mejora con el pasar del tiempo</p>
+                <button class="btn" onclick="añadirAlCarrito('PlayMaker Kit 1')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/kit.jpg" alt="Kit">
+              <p><strong>playmaker Kits 2</strong><br>Herramienta que ayuda al monitoreo de datos y estadísticas</p>
+              <button class="btn" onclick="añadirAlCarrito('PlayMaker KIt 2')">Añadir al carrito</button>
+            </div>
+            <div class="item-galeria">
+              <img src="images/kit2.jpg" alt="kit2">
+              <p><strong>PlayMaker Kits cityPlay</strong><br>Articulo dedicado a aquellos atletas de alto nivel que quieren seguir mejorando</p>
+              <button class="btn" onclick="añadirAlCarrito('PlayMaker Kit 3')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto 6: Otros -->
+    <div class="producto">
+      <img src="images/otros.jpg" alt="Otras herramientas deportivas">
+      <h3>Otras herramientas deportivas</h3>
+      <p>Complementos esenciales para el entrenamiento: pesas, bandas, ropa y más.</p>
+      <button onclick="toggleGaleriaGlobal(this, 'galeria-otros')" class="btn">Ver más</button>
+    </div>
+
+    <!-- Galería global debajo de todos los productos -->
+    <div id="galeria-otros" class="galeria-global" style="display: none;">
+      <h4>Modelos disponibles:</h4>
+      <div class="galeria-horizontal">
+        <div class="item-galeria">
+          <img src="images/pesas.jpg" alt="Pesas">
+          <p><strong>Kit de Pesas</strong><br>Kits para empezar con los ejercicios.</p>
+          <button class="btn" onclick="añadirAlCarrito('Pesas')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+          <img src="images/bandas.jpg" alt="Bandas de resistencia">
+          <p><strong>Bandas de resistencia</strong><br>3 niveles de tensión, material antideslizante.</p>
+          <button class="btn" onclick="añadirAlCarrito('Bandas de resistencia')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+          <img src="images/proteina.jpg" alt="Suplementos">
+          <p><strong>Suplementos Deportivos</strong><br>Ayudan a mejorar resistencia, recuperación y fuerza.</p>
+          <button class="btn" onclick="añadirAlCarrito('Proteina')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+            <img src="images/mascoxigen.jpg" alt="Mascaras de oxigeno">
+            <p><strong>Mascaras de oxigeno</strong><br>Aparato para mejorar la resistencia del atleta</p>
+            <button class="btn" onclick="añadirAlCarrito('Mascara de oxigeno')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+          <img src="images/reflejos.jpg" alt="Reflejos">
+          <p><strong>Maquina para reflejos</strong><br>Maquina que funciona a un ritmo para mejorar los reflejosy tiempo de reaccion del atleta</p>
+          <button class="btn" onclick="añadirAlCarrito('Maquina de Reflejos')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+           <img src="images/chalecogps.jpg" alt="Chalecos">
+          <p><strong>Chalecos GPS Hombre</strong><br>Orientado a medir las estadísticas del deportista masculino</p>
+          <button class="btn" onclick="añadirAlCarrito('Chaleco Gps Hombre')">Añadir al carrito</button>
+        </div>
+          <div class="item-galeria">
+            <img src="images/chalecomuj.jpg" alt="Chalecos f">
+            <p><strong>Chalecos femeninos</strong><br>Chalecos Orientadoa atletas femeninas</p>
+            <button class="btn" onclick="añadirAlCarrito('Chaleco Gps Mujer')">Añadir al carrito</button>
+        </div>
+        <div class="item-galeria">
+          <img src="images/termicanike.jpg" alt="Remera termica Nike">
+          <p><strong>Sudadera termica nike</strong><br>Remera para atletas,ayudan a mantener la temperatura corporal en condiciones climaticas de frio, lluvia o viento</p>
+          <button class="btn" onclick="añadirAlCarrito('Sudadera termica Nike')">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes">
+    <div class="PlanesdeEntrenamiento">
+        <h3>Planes de entrenamiento</h3>
+        <p>Los mejores planes de entrenamiento para los atletas que quieran sacar su mejor nivel en la competencia</p>
+    </div>
+    <div class="planes">
+        <img src="images/preparador1.jpg" alt="Preparador">
+        <h3>Preparador 1</h3>
+        <p><strong>Osmar Sanchez</strong><br>Preparador numero 1, 10 años de experiencia</p>
+        <button class="btn">Contactar</button>
+    </div>
+    <div class="planes">
+        <img src="images/preparador1.jpg" alt="Preparador">
+        <h3>Preparador 2</h3>
+        <p><strong>Gabriel Garcia</strong><br>Preparador numero 2, 15 años de experiencia con grandes atletas nacionales e internacionales</p>
+        <button class="btn">Contactar</button>
+        
+    </div>
+  </section>
+
+  <!-- Sección de atención al cliente -->
+  <section id="atencion">
+    <h2>Atención al Cliente</h2>
+    <p>¿Tienes dudas o necesitas ayuda? Nuestro equipo está disponible 24/7.</p>
+    <button onclick="mostrarMensaje()" class="btn">Chatea con nosotros</button>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+
+      <input type="submit" value="Enviar" class="btn">
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 TechFútbol Solutions. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

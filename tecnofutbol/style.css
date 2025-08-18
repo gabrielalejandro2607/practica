@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de productos */
+#productos {
+  margin-top: 40px;
+}
+
+.tituloProductos {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tituloProductos h2 {
+  font-size: 1.8em;
+  color: #004080;
+}
+
+.producto {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.producto p {
+  margin-bottom: 15px;
+}
+
+.producto button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.producto button:hover {
+  background-color: #0066cc;
+}
+
+/* Galería global de todos los productos */
+.galeria-global {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e6f0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.galeria-global h4 {
+  margin-bottom: 15px;
+  color: #004080;
+  font-size: 1.2em;
+}
+
+/* Galería horizontal con scroll */
+.galeria-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.item-galeria {
+  flex: 0 0 220px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.item-galeria img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.item-galeria p {
+  font-size: 0.9em;
+}
+
+/* Secciones adicionales */
+#atencion, #contacto {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#atencion h2, #contacto h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+#atencion button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#atencion button:hover {
+  background-color: #0066cc;
+}
+
+/* Formulario de contacto */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form input[type="submit"] {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+.btn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0066cc;
+  transform: scale(1.05);
+}
+/* Sección de planes de entrenamiento */
+#planes {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.PlanesdeEntrenamiento {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.PlanesdeEntrenamiento h3 {
+  font-size: 1.8em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.PlanesdeEntrenamiento p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Contenedor flexible para entrenadores */
+.contenedor-entrenadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Tarjeta individual de entrenador */
+.planes {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  flex: 0 0 280px;
+  /*transition: transform 0.3s ease;*/
+}
+
+/*.planes:hover {
+  transform: translateY(-5px);
+}*/
+
+.planes img {
+  width: 10%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.planes h3 {
+  color: #004080;
+  margin-bottom: 8px;
+}
+
+.planes p {
+  font-size: 0.95em;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.btn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0066cc;
+  transform: scale(1.05);
+}
+.carrito {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 250px;
+  background-color: #ffffff;
+  border: 2px solid #004080;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.carrito h3 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding-left: 0;
+}
+
+#lista-carrito li {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  color: #333;
+}
+.btn-eliminar {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: rgb(48, 0, 204);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  color: rgb(98, 0, 255);
+}
